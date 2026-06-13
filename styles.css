@@ -237,7 +237,6 @@ img { max-width: 100%; display: block; }
   background: linear-gradient(135deg, var(--sky) 0%, var(--ocean-deep) 100%); box-shadow: var(--shadow);
   border: 4px solid #fff;
 }
-.team-photo-pet { font-size: 2.8rem; background: linear-gradient(135deg, var(--sky-light) 0%, var(--ocean) 100%); }
 .team-card h3 { font-size: 1.15rem; margin-bottom: .12em; }
 .team-role { color: var(--muted); font-size: .9rem; margin: 0; line-height: 1.4; }
 .team-note { text-align: center; color: var(--muted); margin: 38px 0 0; font-size: .95rem; }
@@ -250,10 +249,9 @@ img { max-width: 100%; display: block; }
 .reviews { background: #fff; }
 .reviews-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 960px; margin: 0 auto; }
 .review { margin: 0; background: var(--foam); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 26px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 12px; }
-.review-stars { color: #f5a623; letter-spacing: 2px; font-size: 1.05rem; }
+.review-stars { color: #b26a00; letter-spacing: 2px; font-size: 1.05rem; }
 .review blockquote { margin: 0; font-size: 1.04rem; line-height: 1.6; color: var(--ink); }
 .review figcaption { color: var(--ocean-deep); font-weight: 600; font-size: .9rem; font-family: "Sora", sans-serif; margin-top: auto; }
-.reviews-note { text-align: center; color: var(--muted); font-size: .84rem; margin: 26px 0 0; font-style: italic; }
 
 /* ---------- Service area ---------- */
 .area { background: #fff; }
@@ -278,6 +276,7 @@ img { max-width: 100%; display: block; }
 .quote-form { background: #fff; border-radius: var(--radius); padding: clamp(24px, 3vw, 36px); box-shadow: var(--shadow-lg); }
 .field { margin-bottom: 16px; }
 .field label { display: block; font-size: .86rem; font-weight: 600; color: var(--navy); margin-bottom: 6px; }
+.field .req { color: #c0392b; font-weight: 700; }
 .field .opt { color: var(--muted); font-weight: 400; }
 .field input, .field select, .field textarea { width: 100%; padding: .8em .95em; border: 1.5px solid var(--line); border-radius: var(--radius-sm); font: inherit; color: var(--ink); background: var(--foam); transition: border-color .2s, box-shadow .2s; }
 .field input:focus, .field select:focus, .field textarea:focus { outline: none; border-color: var(--sky); box-shadow: 0 0 0 3px rgba(56,189,248,.22); background: #fff; }
@@ -336,6 +335,32 @@ img { max-width: 100%; display: block; }
 .skip-link:focus { left: 0; }
 :focus-visible { outline: 3px solid var(--sky); outline-offset: 2px; }
 .btn:focus-visible { outline-offset: 4px; }
+
+/* ---------- Audit polish: hero line, rating, FAQ, form status, link contrast ---------- */
+.hero-contact-line { margin: 16px 0 0; color: rgba(255,255,255,.92); font-size: 1.02rem; font-weight: 500; text-shadow: 0 1px 10px rgba(0,0,0,.3); }
+.hero-contact-line a { color: #fff; font-weight: 700; text-decoration: underline; text-underline-offset: 3px; }
+
+.reviews-rating { margin: 0 0 .6rem; font-family: "Sora", sans-serif; font-weight: 600; color: var(--navy); font-size: 1.05rem; }
+.reviews-rating .rr-stars { color: #b26a00; letter-spacing: 2px; }
+.reviews-rating strong { color: var(--ocean-deep); }
+
+.area-note a, .faq-item p a { color: var(--ocean-deep); text-decoration: underline; text-underline-offset: 2px; }
+
+.form-status { margin: 14px 0 0; padding: 14px 16px; border-radius: var(--radius-sm); background: var(--foam-2); border: 1px solid var(--line); color: var(--ink); font-size: .92rem; line-height: 1.55; }
+.form-status[hidden] { display: none; }
+.form-status a { color: var(--ocean-deep); font-weight: 600; text-decoration: underline; }
+.form-status strong { color: var(--navy); }
+
+.faq { background: #fff; }
+.faq-inner { max-width: 760px; margin: 0 auto; }
+.faq-list { display: grid; gap: 12px; }
+.faq-item { background: var(--foam); border: 1px solid var(--line); border-radius: var(--radius-sm); padding: 0 20px; }
+.faq-item summary { cursor: pointer; list-style: none; padding: 18px 0; font-family: "Sora", sans-serif; font-weight: 600; color: var(--navy); display: flex; justify-content: space-between; align-items: center; gap: 14px; }
+.faq-item summary::-webkit-details-marker { display: none; }
+.faq-item summary::after { content: "+"; font-size: 1.6rem; color: var(--ocean); line-height: 1; flex: none; transition: transform .25s var(--ease); }
+.faq-item[open] summary::after { transform: rotate(45deg); }
+.faq-item p { margin: 0 0 18px; color: #355068; line-height: 1.6; }
+.faq-item summary:focus-visible { outline: 3px solid var(--sky); outline-offset: 3px; border-radius: 6px; }
 
 /* ---------- Responsive ---------- */
 @media (max-width: 920px) {

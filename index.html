@@ -10,15 +10,24 @@
 
   <!-- Open Graph / social -->
   <meta property="og:type" content="website" />
+  <meta property="og:site_name" content="Aquatic Pool Services" />
   <meta property="og:title" content="Aquatic Pool Services — Fort Myers, FL" />
   <meta property="og:description" content="Family-owned, 20+ years, 300+ pools. Crystal-clear water &amp; reliable service across Southwest Florida. Text or call (239) 357-6622." />
   <meta property="og:image" content="https://btabiado.github.io/aquatic-pool-services/images/og.jpg" />
+  <meta property="og:image:width" content="1200" />
+  <meta property="og:image:height" content="633" />
   <meta property="og:image:alt" content="A crystal-clear screened lanai pool cared for by Aquatic Pool Services in Southwest Florida" />
   <meta property="og:url" content="https://btabiado.github.io/aquatic-pool-services/" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Aquatic Pool Services — Fort Myers, FL" />
+  <meta name="twitter:description" content="Family-owned pool &amp; home care across Southwest Florida. Text or call (239) 357-6622 for a free quote." />
   <meta name="twitter:image" content="https://btabiado.github.io/aquatic-pool-services/images/og.jpg" />
 
+  <meta name="referrer" content="strict-origin-when-cross-origin" />
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'self' sms: tel: mailto:; frame-ancestors 'none'" />
+
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
+  <link rel="preload" as="image" href="images/hero.jpg" fetchpriority="high" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -76,7 +85,14 @@
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Watch & Check-Ins" } },
         { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Pool & Home Service" } }
       ]
-    }
+    },
+    "geo": { "@type": "GeoCoordinates", "latitude": 26.6406, "longitude": -81.8723 },
+    "review": [
+      { "@type": "Review", "author": { "@type": "Person", "name": "Don" }, "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 }, "reviewBody": "Jerritt comes every week without fail and always does a great job on the pool. Friendly, easy to talk to, and I look forward to seeing him every visit." },
+      { "@type": "Review", "author": { "@type": "Person", "name": "Anne Marie" }, "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 }, "reviewBody": "Jerritt is the best pool guy around. He's become a friend and keeps our pool crystal clear. We wouldn't use anyone else." },
+      { "@type": "Review", "author": { "@type": "Person", "name": "Mike & Darlene" }, "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 }, "reviewBody": "Jerritt has looked after our place for years and is the pool guy we always recommend. We're away half the year, and with his home-watch service everything is exactly as we left it when we return." },
+      { "@type": "Review", "author": { "@type": "Person", "name": "Sherry & Jim" }, "reviewRating": { "@type": "Rating", "ratingValue": 5, "bestRating": 5 }, "reviewBody": "Jerritt has been coming to the island for years. He's cleaned up our pool after storms more than once, repaired our equipment, and always keeps it sparkling." }
+    ]
   }
   </script>
 </head>
@@ -131,19 +147,20 @@
         <h1 class="reveal"><span class="h1-kicker">Fort Myers Pool Cleaning &amp; Maintenance</span>Crystal-clear water.<br /><span>Reliable service.</span></h1>
         <p class="hero-sub reveal">Southwest Florida&rsquo;s trusted, family-owned pool team. Weekly maintenance, expert water care, and equipment repair &mdash; plus emergency service and home watch while you&rsquo;re away. Your pool stays swim-ready and your home stays watched, so you never lift a finger.</p>
         <div class="hero-actions reveal">
-          <a class="btn btn-primary btn-lg" href="mailto:jerrittswope@yahoo.com?subject=Pool%20service%20quote%20request&body=Hi%20Jerritt%2C%20I%27d%20like%20a%20quote%20for%20pool%20service.%0A%0AName%3A%0AAddress%3A%0APhone%3A%0A">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="ico" style="fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"><path d="M3 6.5h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="m3 7 9 6 9-6"/></svg>
-            Email Us
+          <a class="btn btn-primary btn-lg" href="sms:+12393576622?&body=Hi%20Jerritt%2C%20I%27d%20like%20a%20free%20quote%20for%20pool%20service." title="Text (239) 357-6622">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="ico"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12Z"/></svg>
+            Text for a Free Quote
           </a>
-          <a class="btn btn-ghost btn-lg" href="tel:+12393576622">
+          <a class="btn btn-ghost btn-lg" href="tel:+12393576622" title="Call (239) 357-6622">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="ico"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1Z"/></svg>
             Call
           </a>
-          <a class="btn btn-ghost btn-lg" href="sms:+12393576622?&body=Hi%20Jerritt%2C%20I%27d%20like%20a%20quote%20for%20pool%20service.">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="ico"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12Z"/></svg>
-            Text
+          <a class="btn btn-ghost btn-lg" href="mailto:jerrittswope@yahoo.com?subject=Pool%20service%20quote%20request&body=Hi%20Jerritt%2C%20I%27d%20like%20a%20free%20quote%20for%20pool%20service.%0A%0AName%3A%0AAddress%3A%0APhone%3A%0A">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="ico" style="fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"><path d="M3 6.5h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="m3 7 9 6 9-6"/></svg>
+            Email
           </a>
         </div>
+        <p class="hero-contact-line reveal">Call or text <a href="tel:+12393576622">(239)&nbsp;357-6622</a> &middot; free, no-obligation quotes</p>
       </div>
       <a href="#stats" class="scroll-cue" aria-label="Scroll down"><span></span></a>
     </section>
@@ -311,6 +328,7 @@
         <header class="section-head reveal">
           <p class="eyebrow eyebrow-dark">Customer feedback</p>
           <h2>What our customers say</h2>
+          <p class="reviews-rating" aria-label="Rated 5 out of 5 by local homeowners"><span class="rr-stars" aria-hidden="true">★★★★★</span> <strong>5.0</strong> from local homeowners</p>
           <p class="section-lead">Real words from Southwest Florida homeowners who trust us with their pools.</p>
         </header>
         <div class="reviews-grid">
@@ -358,6 +376,57 @@
       </div>
     </section>
 
+    <!-- ===== FAQ ===== -->
+    <section class="section faq" id="faq">
+      <div class="container faq-inner">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow-dark">Good to know</p>
+          <h2>Frequently asked questions</h2>
+          <p class="section-lead">A few things homeowners ask before they reach out.</p>
+        </header>
+        <div class="faq-list reveal">
+          <details class="faq-item">
+            <summary>What&rsquo;s included in weekly pool service?</summary>
+            <p>Every visit we skim, brush, and vacuum, empty the skimmer and pump baskets, and run a full water test &mdash; balancing chlorine, pH, alkalinity, and stabilizer &mdash; then check that your pump and equipment are running right.</p>
+          </details>
+          <details class="faq-item">
+            <summary>How much does pool service cost?</summary>
+            <p>Every pool is a little different, so we give a free, no-obligation quote based on your pool and what you need. The fastest way to get a price is to text or call <a href="tel:+12393576622">(239)&nbsp;357-6622</a>.</p>
+          </details>
+          <details class="faq-item">
+            <summary>What areas do you serve?</summary>
+            <p>Fort Myers, Fort Myers Beach, North Fort Myers, Estero, Bonita Springs, Lehigh Acres, Naples, and the surrounding Southwest Florida communities. Not sure if we reach you? Just ask.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Can you look after my pool and home while I&rsquo;m away?</summary>
+            <p>Absolutely &mdash; that&rsquo;s one of our specialties. We keep your pool swim-ready year-round, check on your home, pick up the mail, and handle pre- and post-storm inspections, so seasonal residents come back to everything just as they left it.</p>
+          </details>
+          <details class="faq-item">
+            <summary>My pool turned green &mdash; can you fix it?</summary>
+            <p>Yes. Our green-to-clean recovery brings cloudy, algae-filled water back to crystal clear, and then we keep it that way with regular service.</p>
+          </details>
+          <details class="faq-item">
+            <summary>Do you repair pool equipment?</summary>
+            <p>We do &mdash; pumps, filters, heaters, and salt cells. We clean, diagnose, and repair so everything keeps running, and we can take care of storm cleanup too.</p>
+          </details>
+        </div>
+      </div>
+    </section>
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        { "@type": "Question", "name": "What's included in weekly pool service?", "acceptedAnswer": { "@type": "Answer", "text": "Every visit we skim, brush, and vacuum, empty the skimmer and pump baskets, and run a full water test (chlorine, pH, alkalinity, and stabilizer), then check that your pump and equipment are running right." } },
+        { "@type": "Question", "name": "How much does pool service cost?", "acceptedAnswer": { "@type": "Answer", "text": "Every pool is a little different, so we give a free, no-obligation quote based on your pool and what you need. Text or call (239) 357-6622 for a price." } },
+        { "@type": "Question", "name": "What areas do you serve?", "acceptedAnswer": { "@type": "Answer", "text": "Fort Myers, Fort Myers Beach, North Fort Myers, Estero, Bonita Springs, Lehigh Acres, Naples, and the surrounding Southwest Florida communities." } },
+        { "@type": "Question", "name": "Can you look after my pool and home while I'm away?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. We keep your pool swim-ready year-round, check on your home, pick up the mail, and handle pre- and post-storm inspections for seasonal residents." } },
+        { "@type": "Question", "name": "My pool turned green - can you fix it?", "acceptedAnswer": { "@type": "Answer", "text": "Yes. Our green-to-clean recovery brings cloudy, algae-filled water back to crystal clear, then we keep it that way with regular service." } },
+        { "@type": "Question", "name": "Do you repair pool equipment?", "acceptedAnswer": { "@type": "Answer", "text": "Yes - pumps, filters, heaters, and salt cells. We clean, diagnose, and repair, and we handle storm cleanup too." } }
+      ]
+    }
+    </script>
+
     <!-- ===== Contact ===== -->
     <section class="section contact" id="contact">
       <div class="container contact-grid">
@@ -392,15 +461,15 @@
 
         <form class="quote-form reveal" id="quoteForm" novalidate>
           <div class="field">
-            <label for="name">Name</label>
+            <label for="name">Name <span class="req" aria-hidden="true">*</span></label>
             <input type="text" id="name" name="name" autocomplete="name" required />
           </div>
           <div class="field">
-            <label for="phone">Phone</label>
+            <label for="phone">Phone <span class="req" aria-hidden="true">*</span></label>
             <input type="tel" id="phone" name="phone" autocomplete="tel" required />
           </div>
           <div class="field">
-            <label for="email">Email</label>
+            <label for="email">Email <span class="req" aria-hidden="true">*</span></label>
             <input type="email" id="email" name="email" autocomplete="email" required />
           </div>
           <div class="field">
@@ -425,7 +494,8 @@
             <textarea id="message" name="message" rows="3"></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-lg btn-block">Send my request</button>
-          <p class="form-note">Opens a pre-filled text to our team &mdash; just hit send. We reply fast.</p>
+          <p class="form-note">Free, no-obligation &mdash; opens a pre-filled text to our team. We reply fast.</p>
+          <div class="form-status" id="formStatus" role="status" aria-live="polite" hidden></div>
         </form>
       </div>
     </section>
@@ -476,13 +546,13 @@
 
   <!-- Sticky mobile contact bar -->
   <div class="mobile-bar">
-    <a href="tel:+12393576622" class="mobile-bar-btn call">
+    <a href="tel:+12393576622" class="mobile-bar-btn call" aria-label="Call (239) 357-6622">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1Z"/></svg>
-      Call
+      (239) 357-6622
     </a>
-    <a href="sms:+12393576622?&body=Hi%20Jerritt%2C%20I%27d%20like%20a%20quote%20for%20pool%20service." class="mobile-bar-btn text">
+    <a href="sms:+12393576622?&body=Hi%20Jerritt%2C%20I%27d%20like%20a%20free%20quote%20for%20pool%20service." class="mobile-bar-btn text">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12Z"/></svg>
-      Text Now
+      Text Us
     </a>
   </div>
 
