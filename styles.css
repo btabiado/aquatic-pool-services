@@ -248,7 +248,7 @@ img { max-width: 100%; display: block; }
 
 /* ---------- Reviews ---------- */
 .reviews { background: #fff; }
-.reviews-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.reviews-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; max-width: 960px; margin: 0 auto; }
 .review { margin: 0; background: var(--foam); border: 1px solid var(--line); border-radius: var(--radius); padding: 28px 26px; box-shadow: var(--shadow); display: flex; flex-direction: column; gap: 12px; }
 .review-stars { color: #f5a623; letter-spacing: 2px; font-size: 1.05rem; }
 .review blockquote { margin: 0; font-size: 1.04rem; line-height: 1.6; color: var(--ink); }
