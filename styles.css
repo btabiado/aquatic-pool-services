@@ -95,6 +95,9 @@ img { max-width: 100%; display: block; }
 }
 .btn-text-now:hover { box-shadow: 0 16px 28px -10px rgba(2,132,199,.9); }
 
+.btn-white { background: #fff; color: var(--ocean-deep); }
+.btn-white:hover { background: var(--foam); }
+
 .btn-lg { font-size: 1.05rem; padding: 1em 1.8em; }
 .btn-block { width: 100%; }
 
@@ -185,6 +188,16 @@ img { max-width: 100%; display: block; }
 .card-ico svg .chk { stroke: var(--sky); }
 .card h3 { font-size: 1.22rem; font-weight: 600; }
 .card p { color: var(--muted); margin: 0; font-size: .98rem; }
+
+/* ---------- Emergency callout ---------- */
+.emergency { background: linear-gradient(115deg, var(--sky) 0%, var(--ocean) 55%, var(--ocean-deep) 100%); color: #fff; padding: clamp(36px, 5vw, 52px) 0; }
+.emergency-inner { display: flex; align-items: center; gap: 26px; flex-wrap: wrap; }
+.emergency-icon { flex: none; width: 64px; height: 64px; border-radius: 16px; background: rgba(255,255,255,.18); display: grid; place-items: center; }
+.emergency-icon svg { width: 34px; height: 34px; fill: #fff; }
+.emergency-text { flex: 1 1 320px; }
+.emergency-text h2 { color: #fff; font-size: clamp(1.4rem, 2.8vw, 1.95rem); margin-bottom: .3em; }
+.emergency-text p { color: rgba(255,255,255,.92); margin: 0; max-width: 540px; }
+.emergency-actions { display: flex; gap: 12px; flex-wrap: wrap; }
 
 /* ---------- Our Story ---------- */
 .story { background: #fff; }
