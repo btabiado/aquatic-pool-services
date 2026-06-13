@@ -151,7 +151,7 @@
       if (!form.checkValidity()) { form.reportValidity(); return; }
       var d = new FormData(form);
       var lines = [
-        "Hi! I'd like a quote for pool service.",
+        "Hi Jerritt, I'd like a quote for pool service.",
         "Name: " + (d.get("name") || ""),
         "Phone: " + (d.get("phone") || ""),
         "Email: " + (d.get("email") || ""),
