@@ -73,9 +73,10 @@
         }
       });
     }, { threshold: 0.12, rootMargin: "0px 0px -40px 0px" });
+    var reduceMotion = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     reveals.forEach(function (el, i) {
       // small stagger for items in the same row
-      el.style.transitionDelay = (i % 4) * 70 + "ms";
+      if (!reduceMotion) el.style.transitionDelay = (i % 4) * 70 + "ms";
       io.observe(el);
     });
   } else {
@@ -127,9 +128,17 @@
     lb.addEventListener("click", function (e) { if (e.target === lb) closeLb(); });
     document.addEventListener("keydown", function (e) {
       if (lb.hidden) return;
-      if (e.key === "Escape") closeLb();
-      else if (e.key === "ArrowLeft") show(current - 1);
-      else if (e.key === "ArrowRight") show(current + 1);
+      if (e.key === "Escape") { closeLb(); return; }
+      if (e.key === "ArrowLeft") { show(current - 1); return; }
+      if (e.key === "ArrowRight") { show(current + 1); return; }
+      if (e.key === "Tab") {
+        // Trap focus inside the modal among its three controls
+        var f = [lbClose, lbPrev, lbNext];
+        var i = f.indexOf(document.activeElement);
+        if (i === -1) { e.preventDefault(); f[0].focus(); }
+        else if (e.shiftKey && i === 0) { e.preventDefault(); f[f.length - 1].focus(); }
+        else if (!e.shiftKey && i === f.length - 1) { e.preventDefault(); f[0].focus(); }
+      }
     });
   }
 
@@ -142,15 +151,26 @@
       if (!form.checkValidity()) { form.reportValidity(); return; }
       var d = new FormData(form);
       var lines = [
-        "Pool quote request:",
+        "Hi Jared, I'd like a quote for pool service.",
         "Name: " + (d.get("name") || ""),
         "Phone: " + (d.get("phone") || ""),
-        "Address: " + (d.get("address") || ""),
+        "Email: " + (d.get("email") || ""),
+        (d.get("address") ? "Address: " + d.get("address") : ""),
         "Service: " + (d.get("service") || ""),
         (d.get("message") ? "Notes: " + d.get("message") : "")
       ].filter(Boolean);
       var body = encodeURIComponent(lines.join("\n"));
       window.location.href = "sms:" + BUSINESS_PHONE + "?&body=" + body;
     });
+  }
+
+  /* ---- Hide the floating Text-Now button once the footer is in view ---- */
+  var fab = document.querySelector(".fab-text");
+  var footer = document.querySelector(".site-footer");
+  if (fab && footer && "IntersectionObserver" in window) {
+    var fabIo = new IntersectionObserver(function (entries) {
+      entries.forEach(function (e) { fab.classList.toggle("fab-hidden", e.isIntersecting); });
+    }, { rootMargin: "0px 0px -30px 0px" });
+    fabIo.observe(footer);
   }
 })();

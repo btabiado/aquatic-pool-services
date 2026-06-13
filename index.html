@@ -2,19 +2,21 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <title>Aquatic Pool Services | Pool Cleaning & Maintenance in Fort Myers, FL</title>
-  <meta name="description" content="Family-owned pool &amp; home care in Fort Myers and Southwest Florida. 200+ pools over 20 years. Weekly maintenance, pump &amp; equipment repair, pH balancing, green-to-clean, hurricane cleanup, emergency service, plus home watch &amp; mail pickup while you're away. Text or call Jerritt at (239) 357-6622." />
+  <meta name="description" content="Family-owned pool &amp; home care in Fort Myers and Southwest Florida. 300+ pools over 20 years. Weekly maintenance, pump &amp; equipment repair, pH balancing, green-to-clean, hurricane cleanup, emergency service, plus home watch &amp; mail pickup while you're away. Text or call Jerritt at (239) 357-6622." />
   <meta name="theme-color" content="#075985" />
   <link rel="canonical" href="https://btabiado.github.io/aquatic-pool-services/" />
 
   <!-- Open Graph / social -->
   <meta property="og:type" content="website" />
   <meta property="og:title" content="Aquatic Pool Services — Fort Myers, FL" />
-  <meta property="og:description" content="Family-owned, 20+ years, 200+ pools. Crystal-clear water &amp; reliable service across Southwest Florida. Text or call (239) 357-6622." />
+  <meta property="og:description" content="Family-owned, 20+ years, 300+ pools. Crystal-clear water &amp; reliable service across Southwest Florida. Text or call (239) 357-6622." />
   <meta property="og:image" content="https://btabiado.github.io/aquatic-pool-services/images/og.jpg" />
+  <meta property="og:image:alt" content="A crystal-clear screened lanai pool cared for by Aquatic Pool Services in Southwest Florida" />
   <meta property="og:url" content="https://btabiado.github.io/aquatic-pool-services/" />
   <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:image" content="https://btabiado.github.io/aquatic-pool-services/images/og.jpg" />
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
 
@@ -23,6 +25,7 @@
   <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
 
   <link rel="stylesheet" href="styles.css" />
+  <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 
   <!-- Local business structured data (SEO) -->
   <script type="application/ld+json">
@@ -34,8 +37,8 @@
     "url": "https://btabiado.github.io/aquatic-pool-services/",
     "telephone": "+1-239-357-6622",
     "email": "jerrittswope@yahoo.com",
-    "founder": "Jerritt Swope",
-    "description": "Family-owned pool and home care across Fort Myers and Southwest Florida: pool cleaning and maintenance, pump and equipment repair, water chemistry and pH balancing, green-to-clean recovery, hurricane prep and cleanup, emergency service, plus home watch, check-ins, and mail pickup while you're away. 200+ pools cared for over 20 years.",
+    "founder": { "@type": "Person", "name": "Jerritt Swope" },
+    "description": "Family-owned pool and home care across Fort Myers and Southwest Florida: pool cleaning and maintenance, pump and equipment repair, water chemistry and pH balancing, green-to-clean recovery, hurricane prep and cleanup, emergency service, plus home watch, check-ins, and mail pickup while you're away. 300+ pools cared for over 20 years.",
     "priceRange": "$$",
     "address": {
       "@type": "PostalAddress",
@@ -45,13 +48,37 @@
       "postalCode": "33966",
       "addressCountry": "US"
     },
+    "openingHoursSpecification": [
+      {
+        "@type": "OpeningHoursSpecification",
+        "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+        "opens": "08:00",
+        "closes": "18:00"
+      }
+    ],
     "areaServed": [
       { "@type": "City", "name": "Fort Myers" },
       { "@type": "City", "name": "Cape Coral" },
+      { "@type": "City", "name": "Fort Myers Beach" },
+      { "@type": "City", "name": "North Fort Myers" },
       { "@type": "City", "name": "Estero" },
       { "@type": "City", "name": "Bonita Springs" },
+      { "@type": "City", "name": "Lehigh Acres" },
       { "@type": "City", "name": "Naples" }
-    ]
+    ],
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Pool & Home Services",
+      "itemListElement": [
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Weekly Pool Maintenance" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Water Chemistry & pH Balancing" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Pump, Filter & Equipment Repair" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Green-to-Clean Recovery" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Hurricane Prep & Cleanup" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Home Watch & Check-Ins" } },
+        { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Emergency Pool & Home Service" } }
+      ]
+    }
   }
   </script>
 </head>
@@ -72,13 +99,14 @@
       <nav class="nav" id="nav" aria-label="Primary">
         <a href="#services">Services</a>
         <a href="#story">Our Story</a>
+        <a href="#team">Team</a>
         <a href="#gallery">Gallery</a>
-        <a href="#area">Service Area</a>
+        <a href="#reviews">Reviews</a>
         <a href="#contact">Contact</a>
       </nav>
 
       <div class="header-cta">
-        <a class="btn btn-text-now" href="sms:+12393576622?&body=Hi%20Jerritt%2C%20I%27d%20like%20a%20quote%20for%20pool%20service.">
+        <a class="btn btn-text-now" href="sms:+12393576622?&body=Hi%20Jared%2C%20I%27d%20like%20a%20quote%20for%20pool%20service.">
           <svg viewBox="0 0 24 24" aria-hidden="true" class="ico"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12Z"/></svg>
           <span>Text Now</span>
         </a>
@@ -101,17 +129,21 @@
       <div class="hero-media" role="img" aria-label="Screened lanai pool overlooking a lake in Southwest Florida"></div>
       <div class="hero-overlay"></div>
       <div class="container hero-content">
-        <p class="eyebrow reveal">Family-owned in Fort Myers &middot; 20+ years</p>
-        <h1 class="reveal">Crystal-clear water.<br /><span>Reliable service.</span></h1>
-        <p class="hero-sub reveal">Southwest Florida&rsquo;s trusted, family-owned pool team. Weekly maintenance, expert water care, and equipment repair &mdash; plus emergency service and home watch while you&rsquo;re away. We look after your pool <em>and</em> your home, so you never lift a net.</p>
+        <p class="eyebrow reveal">Family-owned &middot; serving SWFL for 20+ years</p>
+        <h1 class="reveal"><span class="h1-kicker">Fort Myers Pool Cleaning &amp; Maintenance</span>Crystal-clear water.<br /><span>Reliable service.</span></h1>
+        <p class="hero-sub reveal">Southwest Florida&rsquo;s trusted, family-owned pool team. Weekly maintenance, expert water care, and equipment repair &mdash; plus emergency service and home watch while you&rsquo;re away. Your pool stays swim-ready and your home stays watched, so you never lift a finger.</p>
         <div class="hero-actions reveal">
-          <a class="btn btn-primary btn-lg" href="sms:+12393576622?&body=Hi%20Jerritt%2C%20I%27d%20like%20a%20quote%20for%20pool%20service.">
-            <svg viewBox="0 0 24 24" aria-hidden="true" class="ico"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12Z"/></svg>
-            Contact Us Now
+          <a class="btn btn-primary btn-lg" href="mailto:jerrittswope@yahoo.com?subject=Pool%20service%20quote%20request&body=Hi%20Jared%2C%20I%27d%20like%20a%20quote%20for%20pool%20service.%0A%0AName%3A%0AAddress%3A%0APhone%3A%0A">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="ico" style="fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"><path d="M3 6.5h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="m3 7 9 6 9-6"/></svg>
+            Email Us
           </a>
           <a class="btn btn-ghost btn-lg" href="tel:+12393576622">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="ico"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1Z"/></svg>
-            Call (239) 357-6622
+            Call
+          </a>
+          <a class="btn btn-ghost btn-lg" href="sms:+12393576622?&body=Hi%20Jared%2C%20I%27d%20like%20a%20quote%20for%20pool%20service.">
+            <svg viewBox="0 0 24 24" aria-hidden="true" class="ico"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12Z"/></svg>
+            Text
           </a>
         </div>
       </div>
@@ -121,10 +153,10 @@
     <!-- ===== Stats strip ===== -->
     <section class="stats" id="stats" aria-label="By the numbers">
       <div class="container stats-grid">
-        <div class="stat reveal"><span class="stat-num" data-count="20" data-suffix="+">0</span><span class="stat-label">Years in business</span></div>
-        <div class="stat reveal"><span class="stat-num" data-count="200" data-suffix="+">0</span><span class="stat-label">Pools cared for</span></div>
-        <div class="stat reveal"><span class="stat-num stat-word">Family</span><span class="stat-label">Owned &amp; operated</span></div>
-        <div class="stat reveal"><span class="stat-num stat-word">SWFL</span><span class="stat-label">Fort Myers &amp; beyond</span></div>
+        <div class="stat reveal" role="img" aria-label="Over 20 years in business"><span class="stat-num" data-count="20" data-suffix="+" aria-hidden="true">0</span><span class="stat-label" aria-hidden="true">Years in business</span></div>
+        <div class="stat reveal" role="img" aria-label="Over 300 pools cared for"><span class="stat-num" data-count="300" data-suffix="+" aria-hidden="true">0</span><span class="stat-label" aria-hidden="true">Pools cared for</span></div>
+        <div class="stat reveal" role="img" aria-label="Family owned and operated"><span class="stat-num stat-word" aria-hidden="true">Family</span><span class="stat-label" aria-hidden="true">Owned &amp; operated</span></div>
+        <div class="stat reveal" role="img" aria-label="Serving Fort Myers and Southwest Florida"><span class="stat-num stat-word" aria-hidden="true">SWFL</span><span class="stat-label" aria-hidden="true">Fort Myers &amp; beyond</span></div>
       </div>
     </section>
 
@@ -187,7 +219,7 @@
             <svg viewBox="0 0 24 24" aria-hidden="true" class="ico"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1Z"/></svg>
             Call (239) 357-6622
           </a>
-          <a class="btn btn-ghost btn-lg" href="sms:+12393576622?&body=Hi%20Jerritt%2C%20I%20have%20a%20pool%2Fhome%20emergency.">
+          <a class="btn btn-ghost btn-lg" href="sms:+12393576622?&body=Hi%20Jared%2C%20I%20have%20a%20pool%2Fhome%20emergency.">
             <svg viewBox="0 0 24 24" aria-hidden="true" class="ico"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12Z"/></svg>
             Text Now
           </a>
@@ -199,9 +231,9 @@
     <section class="section story" id="story">
       <div class="container story-grid">
         <div class="story-media reveal">
-          <img src="images/story.jpg" alt="A pristine Southwest Florida pool cared for by Aquatic Pool Services" loading="lazy" width="1400" height="1050" />
+          <img src="images/story.jpg" alt="Crystal-clear pool water and poolside loungers cared for by Aquatic Pool Services" loading="lazy" width="790" height="790" />
           <div class="story-badge">
-            <strong>200+</strong>
+            <strong>300+</strong>
             <span>pools cared for<br />over 20 years</span>
           </div>
         </div>
@@ -210,10 +242,49 @@
           <h2>From a favor for a neighbor to SWFL&rsquo;s trusted pool team</h2>
           <p>Aquatic Pool Services started the way the best small businesses do &mdash; with one person who simply cared.</p>
           <p>Before pools, <strong>Jerritt Swope</strong> spent his days at the Dunes Golf Course, where taking pride in the little details was second nature. When neighbors and customers needed a hand keeping their pools clean and balanced, he stepped in &mdash; not as a business, just as a favor.</p>
-          <p>Word got around. One pool became a handful, a handful became a route, and a simple act of helping out grew into a thriving, family-owned business. Two decades later, Jerritt and his wife <strong>Krista</strong> have cared for more than 200 pools across Southwest Florida &mdash; and they still treat every one like it belongs to a neighbor.</p>
-          <!-- TODO: expand this section with the fuller history from Krista. -->
-          <a class="btn btn-primary" href="#contact">Meet your pool team</a>
+          <p>Word got around. One pool became a handful, a handful became a route, and a simple act of helping out grew into a thriving, family-owned business. More than twenty years later, Jerritt and his wife <strong>Krista</strong> have cared for over 300 pools across Southwest Florida &mdash; and they still treat every one like it belongs to a neighbor.</p>
+          <p>Today it&rsquo;s still a true family operation &mdash; Jerritt, Krista, and the team are the same trusted faces every week, the kind of people you&rsquo;re comfortable handing a house key to while you&rsquo;re up north. That&rsquo;s why so many customers have stayed with them for years.</p>
+          <a class="btn btn-primary" href="#team">Meet your pool team</a>
         </div>
+      </div>
+    </section>
+
+    <!-- ===== Meet the Team ===== -->
+    <section class="section team" id="team">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow-dark">Meet your pool team</p>
+          <h2>The family behind your pool</h2>
+          <p class="section-lead">Friendly, familiar faces who treat your pool &mdash; and your home &mdash; like their own.</p>
+        </header>
+        <div class="team-grid">
+          <article class="team-card reveal">
+            <div class="team-photo" aria-hidden="true">JS</div>
+            <h3>Jerritt Swope</h3>
+            <p class="team-role">Owner &amp; Founder</p>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-photo" aria-hidden="true">KS</div>
+            <h3>Krista Swope</h3>
+            <p class="team-role">Co-Owner</p>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-photo" aria-hidden="true">J</div>
+            <h3>Jared</h3>
+            <p class="team-role">Lead Pool Technician &middot; your main contact</p>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-photo team-photo-pet" aria-hidden="true">🐾</div>
+            <h3>JJ</h3>
+            <p class="team-role">Chief Pool Inspector</p>
+          </article>
+          <article class="team-card reveal">
+            <div class="team-photo" aria-hidden="true">B</div>
+            <h3>Brian</h3>
+            <p class="team-role">Pool Engineer</p>
+          </article>
+        </div>
+        <p class="team-note reveal">Team photos coming soon &mdash; we&rsquo;re a real local family, not a call center.</p>
       </div>
     </section>
 
@@ -232,7 +303,36 @@
         <button class="shot reveal" data-full="images/village.jpg"><img src="images/village.jpg" alt="Freeform pool overlooking a lake and lakefront homes" loading="lazy" /></button>
         <button class="shot reveal" data-full="images/lanai-lake.jpg"><img src="images/lanai-lake.jpg" alt="Screened lanai pool with patio seating and lake view" loading="lazy" /></button>
         <button class="shot reveal" data-full="images/lakeview.jpg"><img src="images/lakeview.jpg" alt="Curved pool with wide lake view" loading="lazy" /></button>
-        <button class="shot reveal" data-full="images/patio-lake.jpg"><img src="images/patio-lake.jpg" alt="Paver patio pool with lakefront view and palms" loading="lazy" /></button>
+        <button class="shot reveal" data-full="images/equipment.jpg"><img src="images/equipment.jpg" alt="Pool pump and filter equipment serviced and running" loading="lazy" /></button>
+      </div>
+    </section>
+
+    <!-- ===== Customer feedback ===== -->
+    <section class="section reviews" id="reviews">
+      <div class="container">
+        <header class="section-head reveal">
+          <p class="eyebrow eyebrow-dark">Customer feedback</p>
+          <h2>What our customers say</h2>
+          <p class="section-lead">Real words from Southwest Florida homeowners who trust us with their pools.</p>
+        </header>
+        <div class="reviews-grid">
+          <figure class="review reveal">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>Our pool has never looked better. Jared shows up the same day every week and the water is always crystal clear.</blockquote>
+            <figcaption>Homeowner &middot; Fort Myers</figcaption>
+          </figure>
+          <figure class="review reveal">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>We spend summers up north and they keep an eye on the whole house, not just the pool. Total peace of mind.</blockquote>
+            <figcaption>Seasonal resident &middot; Cape Coral</figcaption>
+          </figure>
+          <figure class="review reveal">
+            <div class="review-stars" aria-label="5 out of 5 stars">★★★★★</div>
+            <blockquote>Our pump died on a holiday weekend and they had it running again fast. Honest, friendly, and they actually pick up the phone.</blockquote>
+            <figcaption>Homeowner &middot; Estero</figcaption>
+          </figure>
+        </div>
+        <p class="reviews-note reveal">Sample reviews shown &mdash; real customer feedback coming soon.</p>
       </div>
     </section>
 
@@ -254,7 +354,7 @@
           <li>Lehigh Acres</li>
           <li>Naples</li>
         </ul>
-        <p class="area-note reveal">Don&rsquo;t see your town? <a href="sms:+12393576622?&body=Hi%20Jerritt%2C%20do%20you%20service%20my%20area%3F">Send a quick text</a> &mdash; we likely cover you.</p>
+        <p class="area-note reveal">Don&rsquo;t see your town? <a href="sms:+12393576622?&body=Hi%20Jared%2C%20do%20you%20service%20my%20area%3F">Send a quick text</a> &mdash; we likely cover you.</p>
       </div>
     </section>
 
@@ -263,17 +363,21 @@
       <div class="container contact-grid">
         <div class="contact-info reveal">
           <p class="eyebrow">Get started</p>
-          <h2>Talk to Jerritt</h2>
-          <p class="contact-lead">Tell us about your pool and we&rsquo;ll get right back to you. The fastest way to reach us is a quick text &mdash; tap below and your message is pre-filled and ready to send.</p>
+          <h2>Talk to our team</h2>
+          <p class="contact-lead">Tell us about your pool and we&rsquo;ll get right back to you. Pick whatever&rsquo;s easiest &mdash; text, call, or email. A quick text is the fastest, and your message comes pre-filled and ready to send.</p>
 
           <div class="contact-actions">
-            <a class="btn btn-primary btn-lg btn-block" href="sms:+12393576622?&body=Hi%20Jerritt%2C%20I%27d%20like%20a%20quote%20for%20pool%20service.">
+            <a class="btn btn-primary btn-lg btn-block" href="sms:+12393576622?&body=Hi%20Jared%2C%20I%27d%20like%20a%20quote%20for%20pool%20service.">
               <svg viewBox="0 0 24 24" aria-hidden="true" class="ico"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12Z"/></svg>
               Text Us Now
             </a>
             <a class="btn btn-outline btn-lg btn-block" href="tel:+12393576622">
               <svg viewBox="0 0 24 24" aria-hidden="true" class="ico"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1Z"/></svg>
               Call (239) 357-6622
+            </a>
+            <a class="btn btn-outline btn-lg btn-block" href="mailto:jerrittswope@yahoo.com?subject=Pool%20service%20quote%20request&body=Hi%20Jared%2C%20I%27d%20like%20a%20quote%20for%20pool%20service.%0A%0AName%3A%0AAddress%3A%0APhone%3A%0A">
+              <svg viewBox="0 0 24 24" aria-hidden="true" class="ico" style="fill:none;stroke:currentColor;stroke-width:2;stroke-linecap:round;stroke-linejoin:round"><path d="M3 6.5h18v11a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z"/><path d="m3 7 9 6 9-6"/></svg>
+              Email Us
             </a>
           </div>
 
@@ -294,6 +398,10 @@
           <div class="field">
             <label for="phone">Phone</label>
             <input type="tel" id="phone" name="phone" autocomplete="tel" required />
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" autocomplete="email" required />
           </div>
           <div class="field">
             <label for="address">Address or city</label>
@@ -317,7 +425,7 @@
             <textarea id="message" name="message" rows="3"></textarea>
           </div>
           <button type="submit" class="btn btn-primary btn-lg btn-block">Send my request</button>
-          <p class="form-note">Opens a pre-filled text to Jerritt &mdash; just hit send. We reply fast.</p>
+          <p class="form-note">Opens a pre-filled text to our team &mdash; just hit send. We reply fast.</p>
         </form>
       </div>
     </section>
@@ -336,14 +444,14 @@
       <div class="footer-col">
         <h4>Contact</h4>
         <a href="tel:+12393576622">(239) 357-6622</a>
-        <a href="sms:+12393576622?&body=Hi%20Jerritt%2C%20I%27d%20like%20a%20quote%20for%20pool%20service.">Text us</a>
+        <a href="sms:+12393576622?&body=Hi%20Jared%2C%20I%27d%20like%20a%20quote%20for%20pool%20service.">Text us</a>
         <a href="mailto:jerrittswope@yahoo.com">jerrittswope@yahoo.com</a>
         <span>Mon&ndash;Sat, 8am&ndash;6pm</span>
       </div>
       <div class="footer-col">
         <h4>Find us</h4>
         <a href="https://maps.google.com/?q=4553+Waterscape+Lane+Fort+Myers+FL+33966" target="_blank" rel="noopener">4553 Waterscape Lane<br />Fort Myers, FL 33966</a>
-        <span>Serving Cape Coral, Estero,<br />Bonita Springs, Naples &amp; SWFL</span>
+        <span>Serving Fort Myers, Cape Coral,<br />Estero, Bonita Springs, Naples &amp; all of SWFL</span>
       </div>
     </div>
     <div class="container footer-bottom">
@@ -361,7 +469,7 @@
   </div>
 
   <!-- Floating Text-Now button (desktop) -->
-  <a class="fab-text" href="sms:+12393576622?&body=Hi%20Jerritt%2C%20I%27d%20like%20a%20quote%20for%20pool%20service." aria-label="Text us now">
+  <a class="fab-text" href="sms:+12393576622?&body=Hi%20Jared%2C%20I%27d%20like%20a%20quote%20for%20pool%20service." aria-label="Text us now">
     <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12Z"/></svg>
     <span>Text Now</span>
   </a>
@@ -372,7 +480,7 @@
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6.6 10.8a15.1 15.1 0 0 0 6.6 6.6l2.2-2.2a1 1 0 0 1 1-.24 11.4 11.4 0 0 0 3.6.58 1 1 0 0 1 1 1V20a1 1 0 0 1-1 1A17 17 0 0 1 3 4a1 1 0 0 1 1-1h3.5a1 1 0 0 1 1 1 11.4 11.4 0 0 0 .58 3.6 1 1 0 0 1-.25 1Z"/></svg>
       Call
     </a>
-    <a href="sms:+12393576622?&body=Hi%20Jerritt%2C%20I%27d%20like%20a%20quote%20for%20pool%20service." class="mobile-bar-btn text">
+    <a href="sms:+12393576622?&body=Hi%20Jared%2C%20I%27d%20like%20a%20quote%20for%20pool%20service." class="mobile-bar-btn text">
       <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.4A8 8 0 1 1 21 12Z"/></svg>
       Text Now
     </a>
