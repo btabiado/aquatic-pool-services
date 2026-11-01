@@ -143,8 +143,11 @@ img { max-width: 100%; display: block; }
 .hero { position: relative; min-height: 100svh; display: flex; align-items: center; color: #fff; overflow: hidden; }
 .hero-media {
   position: absolute; inset: 0;
-  background: url("images/hero.jpg") center 42% / cover no-repeat;
   transform: scale(1.06); animation: heroZoom 18s ease-out forwards;
+}
+.hero-media picture { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
+.hero-media img {
+  width: 100%; height: 100%; object-fit: cover; object-position: center 42%;
 }
 @keyframes heroZoom { to { transform: scale(1); } }
 .hero-overlay {
@@ -204,6 +207,7 @@ img { max-width: 100%; display: block; }
 .story { background: #fff; }
 .story-grid { display: grid; grid-template-columns: 1.05fr 1fr; gap: clamp(36px, 5vw, 76px); align-items: center; }
 .story-media { position: relative; }
+.story-media picture { display: block; }
 .story-media img { border-radius: var(--radius); box-shadow: var(--shadow-lg); width: 100%; object-fit: cover; max-height: 540px; }
 .story-media::after { content: ""; position: absolute; inset: auto auto -20px -20px; width: 58%; height: 58%; border-radius: var(--radius); background: linear-gradient(135deg, var(--sky), var(--ocean-deep)); z-index: -1; }
 .story-badge {
@@ -221,6 +225,7 @@ img { max-width: 100%; display: block; }
 .gallery { background: linear-gradient(180deg, #fff 0%, var(--foam) 100%); }
 .gallery-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-top: 8px; }
 .shot { padding: 0; border: 0; background: none; cursor: pointer; border-radius: var(--radius-sm); overflow: hidden; aspect-ratio: 4 / 3; box-shadow: var(--shadow); position: relative; }
+.shot picture { position: absolute; inset: 0; display: block; width: 100%; height: 100%; }
 .shot img { width: 100%; height: 100%; object-fit: cover; transition: transform .5s var(--ease); }
 .shot::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg, rgba(8,47,73,.4), transparent 55%); opacity: 0; transition: opacity .3s; }
 .shot:hover img { transform: scale(1.07); }
@@ -242,6 +247,7 @@ img { max-width: 100%; display: block; }
 .team-note { text-align: center; color: var(--muted); margin: 38px 0 0; font-size: .95rem; }
 
 .team-photo { overflow: hidden; }
+.team-photo picture { display: block; width: 100%; height: 100%; }
 .team-photo img { width: 100%; height: 100%; object-fit: cover; }
 .team-photo-img { background: none; }
 
