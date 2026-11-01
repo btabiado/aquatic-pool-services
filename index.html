@@ -28,12 +28,15 @@
   <meta http-equiv="Content-Security-Policy" content="default-src 'self'; img-src 'self' data:; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; script-src 'self' 'unsafe-inline'; base-uri 'none'; form-action 'self' sms: tel: mailto:; frame-ancestors 'none'" />
 
   <link rel="icon" href="favicon.svg" type="image/svg+xml" />
-  <link rel="preload" as="image" href="images/hero.jpg" fetchpriority="high" />
+  <!-- LCP hero: same srcset/sizes as the picture below so the preload is the file the browser will paint. -->
+  <link rel="preload" as="image" href="images/webp/hero-1120.webp" imagesrcset="images/webp/hero-640.webp 640w, images/webp/hero-960.webp 960w, images/webp/hero-1120.webp 1120w, images/webp/hero-1280.webp 1280w, images/webp/hero-1500.webp 1500w" imagesizes="max(100vw, 75vh)" type="image/webp" fetchpriority="high" />
 
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" media="print" onload="this.media='all'" />
+  <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Sora:wght@500;600;700;800&family=Inter:wght@400;500;600&display=swap" /></noscript>
 
+  <script src="app.js" defer></script>
   <link rel="stylesheet" href="styles.css" />
   <noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
 
@@ -141,7 +144,12 @@
 
     <!-- ===== Hero ===== -->
     <section class="hero" id="hero">
-      <div class="hero-media" role="img" aria-label="Screened lanai pool overlooking a lake in Southwest Florida"></div>
+      <div class="hero-media">
+        <picture>
+          <source type="image/webp" srcset="images/webp/hero-640.webp 640w, images/webp/hero-960.webp 960w, images/webp/hero-1120.webp 1120w, images/webp/hero-1280.webp 1280w, images/webp/hero-1500.webp 1500w" sizes="max(100vw, 75vh)" />
+          <img src="images/hero.jpg" alt="Screened lanai pool overlooking a lake in Southwest Florida" width="1500" height="2000" fetchpriority="high" />
+        </picture>
+      </div>
       <div class="hero-overlay"></div>
       <div class="container hero-content">
         <p class="eyebrow reveal">Family-owned &middot; serving SWFL for 20+ years</p>
@@ -247,7 +255,10 @@
     <section class="section story" id="story">
       <div class="container story-grid">
         <div class="story-media reveal">
-          <img src="images/story.jpg" alt="Crystal-clear pool water and poolside loungers cared for by Aquatic Pool Services" loading="lazy" width="790" height="790" />
+          <picture>
+            <source type="image/webp" srcset="images/webp/story-480.webp 480w, images/webp/story-640.webp 640w, images/webp/story-790.webp 790w" sizes="(max-width: 920px) min(560px, calc(100vw - 48px)), 540px" />
+            <img src="images/story.jpg" alt="Crystal-clear pool water and poolside loungers cared for by Aquatic Pool Services" width="790" height="790" loading="lazy" decoding="async" />
+          </picture>
           <div class="story-badge">
             <strong>300+</strong>
             <span>pools cared for<br />over 20 years</span>
@@ -275,27 +286,27 @@
         </header>
         <div class="team-grid">
           <article class="team-card reveal">
-            <div class="team-photo team-photo-img" aria-hidden="true"><img src="images/team-jerritt.jpg" alt="" loading="lazy" /></div>
+            <div class="team-photo team-photo-img" aria-hidden="true"><picture><source type="image/webp" srcset="images/webp/team-jerritt-352.webp 352w, images/webp/team-jerritt-600.webp 600w" sizes="176px" /><img src="images/team-jerritt.jpg" alt="" width="600" height="600" loading="lazy" decoding="async" /></picture></div>
             <h3>Jerritt Swope</h3>
             <p class="team-role">Co-Founder &amp; Owner &middot; your main contact</p>
           </article>
           <article class="team-card reveal">
-            <div class="team-photo team-photo-img" aria-hidden="true"><img src="images/team-christa.jpg" alt="" loading="lazy" /></div>
+            <div class="team-photo team-photo-img" aria-hidden="true"><picture><source type="image/webp" srcset="images/webp/team-christa-352.webp 352w, images/webp/team-christa-600.webp 600w" sizes="176px" /><img src="images/team-christa.jpg" alt="" width="600" height="600" loading="lazy" decoding="async" /></picture></div>
             <h3>Christa Swope</h3>
             <p class="team-role">Co-Owner &amp; Back-Office Support</p>
           </article>
           <article class="team-card reveal">
-            <div class="team-photo team-photo-img" aria-hidden="true"><img src="images/team-inspectors.jpg" alt="" loading="lazy" /></div>
+            <div class="team-photo team-photo-img" aria-hidden="true"><picture><source type="image/webp" srcset="images/webp/team-inspectors-352.webp 352w, images/webp/team-inspectors-600.webp 600w" sizes="176px" /><img src="images/team-inspectors.jpg" alt="" width="600" height="600" loading="lazy" decoding="async" /></picture></div>
             <h3>Jesse &amp; Simba</h3>
             <p class="team-role">Chief Pool Inspectors</p>
           </article>
           <article class="team-card reveal">
-            <div class="team-photo team-photo-img" aria-hidden="true"><img src="images/team-bryan.jpg" alt="" loading="lazy" /></div>
+            <div class="team-photo team-photo-img" aria-hidden="true"><picture><source type="image/webp" srcset="images/webp/team-bryan-352.webp 352w, images/webp/team-bryan-600.webp 600w" sizes="176px" /><img src="images/team-bryan.jpg" alt="" width="600" height="600" loading="lazy" decoding="async" /></picture></div>
             <h3>Bryan</h3>
             <p class="team-role">Pool Engineer &amp; Technical Support</p>
           </article>
           <article class="team-card reveal">
-            <div class="team-photo team-photo-img" aria-hidden="true"><img src="images/team-jackie.jpg" alt="" loading="lazy" /></div>
+            <div class="team-photo team-photo-img" aria-hidden="true"><picture><source type="image/webp" srcset="images/webp/team-jackie-352.webp 352w, images/webp/team-jackie-600.webp 600w" sizes="176px" /><img src="images/team-jackie.jpg" alt="" width="600" height="600" loading="lazy" decoding="async" /></picture></div>
             <h3>Jackie</h3>
             <p class="team-role">Pool Technician in Training</p>
           </article>
@@ -314,12 +325,12 @@
         </header>
       </div>
       <div class="container gallery-grid" id="galleryGrid">
-        <button class="shot reveal" data-full="images/g1.jpg"><img src="images/g1.jpg" alt="Bayfront pool with travertine deck, steps and open-water views" loading="lazy" /></button>
-        <button class="shot reveal" data-full="images/g2.jpg"><img src="images/g2.jpg" alt="Freeform pool and spa under a screened lanai" loading="lazy" /></button>
-        <button class="shot reveal" data-full="images/g3.jpg"><img src="images/g3.jpg" alt="Screened lanai pool with a lake view" loading="lazy" /></button>
-        <button class="shot reveal" data-full="images/g4.jpg"><img src="images/g4.jpg" alt="Rectangular pool with loungers and tropical landscaping" loading="lazy" /></button>
-        <button class="shot reveal" data-full="images/g5.jpg"><img src="images/g5.jpg" alt="Pool and spa with a paver deck and turf lawn" loading="lazy" /></button>
-        <button class="shot reveal" data-full="images/g6.jpg"><img src="images/g6.jpg" alt="Keys-style pool and spa overlooking the bay with palms" loading="lazy" /></button>
+        <button class="shot reveal" data-full="images/g1.jpg"><picture><source type="image/webp" srcset="images/webp/g1-480.webp 480w, images/webp/g1-800.webp 800w, images/webp/g1-1000.webp 1000w" sizes="(max-width: 420px) calc(100vw - 48px), (max-width: 720px) calc((100vw - 48px - 16px) / 2), (max-width: 1160px) calc((100vw - 48px - 32px) / 3), 360px" /><img src="images/g1.jpg" alt="Bayfront pool with travertine deck, steps and open-water views" width="1000" height="750" loading="lazy" decoding="async" /></picture></button>
+        <button class="shot reveal" data-full="images/g2.jpg"><picture><source type="image/webp" srcset="images/webp/g2-480.webp 480w, images/webp/g2-800.webp 800w, images/webp/g2-1000.webp 1000w" sizes="(max-width: 420px) calc(100vw - 48px), (max-width: 720px) calc((100vw - 48px - 16px) / 2), (max-width: 1160px) calc((100vw - 48px - 32px) / 3), 360px" /><img src="images/g2.jpg" alt="Freeform pool and spa under a screened lanai" width="1000" height="750" loading="lazy" decoding="async" /></picture></button>
+        <button class="shot reveal" data-full="images/g3.jpg"><picture><source type="image/webp" srcset="images/webp/g3-480.webp 480w, images/webp/g3-800.webp 800w, images/webp/g3-1000.webp 1000w" sizes="(max-width: 420px) calc(100vw - 48px), (max-width: 720px) calc((100vw - 48px - 16px) / 2), (max-width: 1160px) calc((100vw - 48px - 32px) / 3), 360px" /><img src="images/g3.jpg" alt="Screened lanai pool with a lake view" width="1000" height="750" loading="lazy" decoding="async" /></picture></button>
+        <button class="shot reveal" data-full="images/g4.jpg"><picture><source type="image/webp" srcset="images/webp/g4-480.webp 480w, images/webp/g4-800.webp 800w, images/webp/g4-1000.webp 1000w" sizes="(max-width: 420px) calc(100vw - 48px), (max-width: 720px) calc((100vw - 48px - 16px) / 2), (max-width: 1160px) calc((100vw - 48px - 32px) / 3), 360px" /><img src="images/g4.jpg" alt="Rectangular pool with loungers and tropical landscaping" width="1000" height="750" loading="lazy" decoding="async" /></picture></button>
+        <button class="shot reveal" data-full="images/g5.jpg"><picture><source type="image/webp" srcset="images/webp/g5-480.webp 480w, images/webp/g5-800.webp 800w, images/webp/g5-1000.webp 1000w" sizes="(max-width: 420px) calc(100vw - 48px), (max-width: 720px) calc((100vw - 48px - 16px) / 2), (max-width: 1160px) calc((100vw - 48px - 32px) / 3), 360px" /><img src="images/g5.jpg" alt="Pool and spa with a paver deck and turf lawn" width="1000" height="750" loading="lazy" decoding="async" /></picture></button>
+        <button class="shot reveal" data-full="images/g6.jpg"><picture><source type="image/webp" srcset="images/webp/g6-480.webp 480w, images/webp/g6-800.webp 800w, images/webp/g6-1000.webp 1000w" sizes="(max-width: 420px) calc(100vw - 48px), (max-width: 720px) calc((100vw - 48px - 16px) / 2), (max-width: 1160px) calc((100vw - 48px - 32px) / 3), 360px" /><img src="images/g6.jpg" alt="Keys-style pool and spa overlooking the bay with palms" width="1000" height="750" loading="lazy" decoding="async" /></picture></button>
       </div>
     </section>
 
@@ -563,7 +574,7 @@
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Photo viewer" hidden>
     <button class="lb-close" id="lbClose" aria-label="Close">&times;</button>
     <button class="lb-nav lb-prev" id="lbPrev" aria-label="Previous photo">&#8249;</button>
-    <img id="lbImg" src="" alt="" />
+    <img id="lbImg" src="" alt="" decoding="async" />
     <button class="lb-nav lb-next" id="lbNext" aria-label="Next photo">&#8250;</button>
   </div>
 
@@ -585,6 +596,5 @@
     </a>
   </div>
 
-  <script src="app.js"></script>
 </body>
 </html>
